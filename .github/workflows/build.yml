@@ -2,6 +2,8 @@ name: pdf
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 on:
   push:
@@ -10,6 +12,10 @@ on:
 
 jobs:
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -27,3 +33,13 @@ jobs:
           git add main.pdf
           git commit -m "Update PDF"
           git push -u origin main
+
+      - name: Upload pdf to pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'main.pdf'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
