@@ -11,12 +11,27 @@ on:
       - main
 
 jobs:
+  changes:
+    runs-on: ubuntu-latest
+    steps:
+
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            tex:
+              - 'main.tex'
+              - 'developercv.cls'
+
   build:
+    runs-on: ubuntu-latest
+    needs: changes
+    if: ${{ needs.changes.outputs.tex }} == 'true'
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v4
