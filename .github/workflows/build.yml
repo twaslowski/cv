@@ -16,3 +16,10 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
+
+      - name: Upload pdf
+        uses: actions/upload-artifact@v2
+        id: upload-document
+        with:
+          name: tobias-waslowski-cv.pdf
+          path: main.pdf
