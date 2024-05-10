@@ -207,7 +207,7 @@
 		\textbf{#1}% Entry heading text
 		\hfill% Horizontal whitespace
 		\\\\
-		#2 % Entry description text
+		#2 % Entry description text \\
 	}\\\\
 	}
 
