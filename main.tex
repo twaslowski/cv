@@ -12,196 +12,219 @@
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	% If your name is very short, use just one of the lines below
-	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Tobias}}}}} % First name
-	
-	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Waslowski}}}}} % Last name
-	
-	\vspace{6pt}
-	
-	{\huge Software Engineer} % Career or current job title
-\end{minipage}
-\begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{MapMarker}{12}{Hamburg}\\
-	\icon{Phone}{12}{+49 159 06 71 85 82}\\
-	\icon{At}{12}{\href{mailto:tobiaswaslowski@gmail.com}{tobiaswaslowski@gmail.com}}\\	
-\end{minipage}
-\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{Github}{12}{\href{https://github.com/twaslowski}{Github}}\\
-    \icon{Linkedin}{12}{\href{https://www.linkedin.com/in/twaslowski/}{LinkedIn}}\\
-\end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+        \vspace{-\baselineskip}
+        \colorbox{black}{{\HUGE\textcolor{white}
+        {\textbf{\MakeUppercase{Tobias}}}}}
 
-\vspace{0.5cm}
+        \colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Waslowski}}}}}
+
+        \vspace{6pt}
+
+        {\huge DevOps Engineer}
+    \end{minipage}
+    \begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
+        \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+        % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+        % Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+        \icon{MapMarker}{12}{Hamburg}\\
+        \icon{At}{12}{\href{mailto:contact@twaslowski.com}{contact@twaslowski.com}}\\
+    \end{minipage}
+    \begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+        \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+        % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+        % Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+        \icon{Github}{12}{\href{https://github.com/twaslowski}{Github}}\\
+        \icon{Linkedin}{12}{\href{https://www.linkedin.com/in/twaslowski/}{LinkedIn}}\\
+    \end{minipage}
+
+    \vspace{0.5cm}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\cvsect{Who Am I?}
+    \cvsect{Who Am I?}
 
-\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-I excel at tackling complex technical challenges, thanks to my strong analytical skills and ability to grasp new concepts quickly.  My dedication to quality ensures I consistently deliver well-designed and robust software.
-\end{minipage}
-\hfill % Whitespace between
-\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	\begin{barchart}{5.5}
-		\baritem{Java}{90}
-		\baritem{Python}{70}
-		\baritem{AWS}{60}
-		\baritem{Terraform}{80}
-		\baritem{Linux}{85}
-	\end{barchart}
-\end{minipage}
+    \begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+        \vspace{-\baselineskip} % Required for vertically aligning minipages
+        I deliver well-designed and robust software due to my \textbf{passion for software craftsmanship.}
+        My strong analytical skills and ability to grasp new concepts quickly enable me excel at \textbf{complex technical challenges}.
+    \end{minipage}
+    \hfill % Whitespace between
+    \begin{minipage}[t]{0.5\textwidth} % 55% of the page for the key skills
+        \vspace{-\baselineskip} % Required for vertically aligning minipages
 
-%\begin{center}
-%	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
-%\end{center}
+        \textbf{Cloud \& Infrastructure}\\
+        Kubernetes • AWS • Terraform • Docker • Linux
+        \\ • GitHub Actions • FluxCD
+        \\
+
+        \textbf{Programming \& Development}\\
+        Java • Python • Go • PostgreSQL\\
+    \end{minipage}
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\cvsect{Experience}
+    \cvsect{Experience}
 
-\begin{entrylist}
-	\entry
-		{6/2022 -- 6/2024}
-		{Consultant Developer}
-		{Thoughtworks Germany.}
-		{Software development and infrastructure work with several high-profile clients. Further application of skills developed in my studies including, but not limited to, the application of agile processes and the development of my software craftsmanship. Work at different clients includes:\\
-
-        \textbf{German Car Manufacturer} {\footnotesize(08/2023 -- 04/2024)}
-        \begin{itemize}
-            \item Enabling engineers across a large organization to create and scale self-hosted Gitlab CI Runners to meet workload demands more easily.
-            \item Aligning with other teams to develop clearer product visions as well as remove roadblocks.
-            \item Providing guidance to developers on the team to share technical know-how and drive the product vision.
-        \end{itemize}
-  \texttt{AWS}\slashsep\texttt{Gitlab CI}\slashsep\texttt{Terraform}\slashsep\texttt{AWS}\slashsep\texttt{Bash}\slashsep\texttt{Linux}\\
-  
-        \textbf{Payment Provider} {\footnotesize(07/2022 -- 07/2023)}
-        \begin{itemize}
-            \item Designing and implementing a disaster recovery process for a client, ensuring business continuity in the event of any unforeseen disruptions.
-            \item Engineering quality assurance pipelines to ensure the security of applications and infrastructure as well as key metrics like test coverage.
-            \item Breaking up responsibility and knowledge silos by initiating and driving team-internal conversations and workshops.
-        \end{itemize}
-  \texttt{Java}\slashsep\texttt{Github Actions}\slashsep\texttt{Terraform}\slashsep\texttt{AWS}\slashsep\texttt{PostgresQL}
-  
-    }
-	\entry
-		{8/2018 -- 3/2022\\}
-		{Dual Student}
-		{OTTO GmbH \& Co. KG}
-		{Full-time work in a highly agile work environment. Despite being a student, I took part in real software development early on and substantially contributed to different parts of the company throughout my studies. Highlights include:
-        \begin{itemize}
-            \item Re-designing OTTO's payment matching process, utilizing innovative error-correcting checksums to reduce the amount of manual work required by over 30\%.
-            \item Getting hands-on programming experience and becoming proficient at Clean Code, CI/CD and a wide range of industry best practices.
-            \item Building cloud-native microservices, based on an event-driven architecture, running in Kubernetes.
-        \end{itemize}
-        \texttt{Java}\slashsep\texttt{Kotlin}\slashsep\texttt{AWS}\slashsep\texttt{Terraform}
-        \texttt{Kubernetes}\slashsep\texttt{Docker}
+    \begin{entrylist}
+        \entry
+        {7/2024 -- present\\}
+        {DevOps Engineer}
+        {OTTO Payments GmbH}
+        {As a DevOps Engineer at OTTO Payments, I am responsible for the development and maintenance of my team's
+        cloud infrastructure, ensuring high availability and scalability of our payment services. Achievements include:
+            \begin{itemize}
+                \item Improving disaster recovery processes to reduce my team's RTO to 4 hours.
+            \end{itemize}
         }
-\end{entrylist}
+
+        \entry
+        {6/2022 -- 6/2024}
+        {Consultant Developer}
+        {Thoughtworks Germany.}
+        {Software development and infrastructure work with several high-profile clients.
+        Further application of skills developed in my studies including the development of DevOps skills.
+        Achievements include:
+
+            \begin{itemize}
+                \item Creating a platform for scalable self-hosted Gitlab CI Runners at a large car manufacturer;
+                aligning with teams to clarify product visions and remove roadblocks, and providing technical guidance.
+                \item Designing and implementing disaster recovery processes for a payment provider, engineering quality
+                assurance pipelines, and facilitating knowledge sharing through team workshops.
+            \end{itemize}
+        }
+
+        \entry
+        {8/2018 -- 3/2022\\}
+        {Dual Student}
+        {OTTO GmbH \& Co. KG}
+        {Full-time work in a highly agile work environment. Despite being a student, I took part in real software
+        development early on and substantially contributed to different parts of the company throughout my studies.
+        Achievements include:
+
+            \begin{itemize}
+                \item Re-designing OTTO's payment matching process, utilizing innovative error-correcting checksums to
+                reduce the amount of manual work required by over 30\%.
+                \item Getting hands-on programming experience and becoming proficient at Clean Code, CI/CD and a
+                wide range of industry best practices.
+                \item Building cloud-native microservices, based on an event-driven architecture, running in Kubernetes.
+            \end{itemize}
+        }
+    \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %
 
-\pagebreak
-\cvsect{Education}
+    \pagebreak
+    \cvsect{Education}
 
-\begin{entrylist}
-	\entry
-		{2018 -- 2022}
-		{B. Sc. Applied Computer Science}
-		{Nordakademie Hochschule der Wirtschaft}
-		{Bachelor's Thesis: "\textit{Usage of AI in Payment Matching: A comparison of traditional algorithmic approaches with Deep Learning}".}
-\end{entrylist}
+    \begin{entrylist}
+        \entry
+        {2018 -- 2022}
+        {B. Sc. Applied Computer Science}
+        {Nordakademie Hochschule der Wirtschaft}
+        {Bachelor's Thesis: "\textit{Usage of AI in Payment Matching: A comparison of traditional algorithmic approaches with Deep Learning}".}
+    \end{entrylist}
 
 
 %----------------------------------------------------------------------------------------
 %	VOLUNTEERING
 %----------------------------------------------------------------------------------------
 
-\cvsect{Volunteering}
+    \cvsect{Volunteering}
 
-\begin{entrylist}
-	\entry
-		{2019 - 2020}
-		{Vice President of Talent Management, AIESEC in Hamburg}
-		{AIESEC Germany}
-		{During my time on the Executive Board of AIESEC in Hamburg, I was responsible for overseeing the quality of membership experience and ensuring performance. My achievements in my one-year term include:
+    \begin{entrylist}
+        \entry
+        {2019 - 2020}
+        {Vice President of Talent Management, AIESEC in Hamburg}
+        {AIESEC Germany}
+        {During my time on the Executive Board of AIESEC in Hamburg, I was responsible for overseeing the quality of membership experience and ensuring performance. My achievements in my one-year term include:
 
-        \begin{itemize}
-            \item Analyzing recruitment pipeline conversion rates, I was able to innovate upon the way that we recruited people; my methods were later widely promoted and adopted across AIESEC in Germany.
-            \item   Beyond achieving a 200\% year-on-year growth of people in our committee, I ensured high engagement throughout the Covid-19-Pandemic, in an organization that thrives primarily on personal contact and travel.
-            \item     Despite not having any experience in people management, my work was recognized nationally, winning the Talent Management Award for performing best in a wide variety of KPIs across 30+ committees in Germany.
-        \end{itemize}  
+            \begin{itemize}
+                \item Analyzing recruitment pipeline conversion rates, I was able to innovate upon the way that we recruited people; my methods were later widely promoted and adopted across AIESEC in Germany.
+                \item Beyond achieving a 200\% year-on-year growth of people in our committee, I ensured high engagement throughout the Covid-19-Pandemic, in an organization that thrives primarily on personal contact and travel.
+                \item Despite not having any experience in people management, my work was recognized nationally, winning the Talent Management Award for performing best in a wide variety of KPIs across 30+ committees in Germany.
+            \end{itemize}
         }
-\end{entrylist}
-
+    \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	PERSONAL PROJECTS
 %----------------------------------------------------------------------------------------
 
-\cvsect{Personal Projects}
+    \cvsect{Personal Projects}
 
-\begin{entrylist}
-	\project
-		{\icon{Github}{12}{\href{https://github.com/twaslowski/lingolift}{lingolift}}}
-		{
-        A tool to create translations of sentences in foreign languages while providing grammatical explanations. Additional features include the creation of inflection tables (such as declension or conjucation) for strongly inflected languages via custom fine-tuned large language models. \\
+    My claim that I am passionate about software craftsmanship is not just a claim, but also reflected in my personal projects.
+    All the projects below are open source and available on GitHub.
+    They are primarily built for my own use, but always built and documented so that others can use them as well,
+    and licensed under the permissive MIT License. \\
 
-        The project consists of completely typed Python, with high test coverage, automated deployments and a cloud-native architecture.\\
-        }
- 
-    \project
-        {\icon{Github}{12}{\href{https://github.com/twaslowski/telegram-mood-tracker}{Telegram-based Mood Tracker}}}
+    \begin{entrylist}
+        \project
+        {\href{https://github.com/twaslowski/grammr}{\icon{Github}{12} grammr}}
         {
-        A Telegram bot that can query, store and visualise a wide range of personalisable mental health metrics. Includes customisable reminders. Built to make tracking metrics, perhaps as a component of therapy, as easy as possible.
+            A language learning toolkit aimed at systematic vocabulary acquisition.
+            It enables users to translate words and phrases, get information on word morphology via state-of-the-art
+        NLP models, and generate conjugation and declension tables for certain languages.
+        Tables and translations can be saved as flashcards and synced over to Anki, a popular spaced repetition software.\\
+        You can try it out \link{https://grammr.app}{here}.
         }
-\end{entrylist}
+
+        \project
+        {\href{https://github.com/twaslowski/open-mood-tracker}{\icon{Github}{12} mood-tracker}}
+        {
+        A Telegram Bot built for tracking various customizable mental health metrics. Useful as a companion when
+        working with a therapist or psychologist. Custom metrics can be tracked and graphed, uncovering patterns
+        and correlations.\\
+        You can try it out \link{https://moody.twaslowski.com}{here}.
+        }
+        \project
+        {\href{https://github.com/twaslowski/homelab}{\icon{Github}{12} homelab}}
+        {
+        My job is also my hobby. Here you can find the full configuration for my multi-node Kubernetes Cluster running
+        at home. It runs the projects above, as well as multiple other services.\\
+        Get an overview over all the services I host \link{https://homer.twaslowski.com}{here}.
+        }
+    \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.3\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+    \begin{minipage}[t]{0.3\textwidth}
+        \vspace{-\baselineskip} % Required for vertically aligning minipages
 
-	\cvsect{Languages}
-	
-	\textbf{German} - native\\
-	\textbf{English} - proficient\\
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.5\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	\cvsect{Hobbies}
-	
-	In my free time, I primarily partake in physical activities. I lift weights, run, swim, bike, hike. I play several musical instruments, sing, and \textcolor{blue}{\href{https://open.spotify.com/artist/2M3v41tQLJG1nek13NGrow?si=o6iBdOBNQvqiQ5qq6Wze6A}{occasionally produce a song or two}}. I've performed on a \textcolor{blue}{\href{https://en.wikipedia.org/wiki/No_Grave_But_the_Sea}{popular metal album}} as a session musician.
-    I also enjoy playing chess at an intermediate level.
-\end{minipage}
-\hfill
-\vfill
+        \cvsect{Languages}
 
-\footnotesize{This document is generated on GitHub and available on \textcolor{blue}{\href{https://twaslowski.github.io/cv/main.pdf}{https://twaslowski.github.io/cv/main.pdf}}. \\
-You can view the source code here: \textcolor{blue}{\href{https://github.com/twaslowski/cv}{https://github.com/twaslowski/cv}}.}
+        \textbf{German} - native\\
+        \textbf{English} - proficient\\
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.5\textwidth}
+        \vspace{-\baselineskip} % Required for vertically aligning minipages
+
+        \cvsect{Hobbies}
+
+        In my free time, I primarily partake in physical activities.
+        I lift weights, run, swim, bike, hike.
+        I play several musical instruments, sing, and
+        \link{https://open.spotify.com/artist/2M3v41tQLJG1nek13NGrow?si=o6iBdOBNQvqiQ5qq6Wze6A}{occasionally produce a song or two}.
+        I've performed on a
+        \link{https://en.wikipedia.org/wiki/No_Grave_But_the_Sea}{popular metal album}
+        as a session musician.
+        I also enjoy playing chess.
+    \end{minipage}
+    \hfill
+    \vfill
+
+    \footnotesize{This document is generated on GitHub and available on \link{https://twaslowski.github.io/cv/main.pdf}{https://twaslowski.github.io/cv/main.pdf}. \\
+    You can view the source code at \link{https://github.com/twaslowski/cv}{https://github.com/twaslowski/cv}.}
 
 %----------------------------------------------------------------------------------------
 
